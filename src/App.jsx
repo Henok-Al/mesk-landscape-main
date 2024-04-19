@@ -1,0 +1,38 @@
+import { Routes, Route } from "react-router-dom";
+import {
+  Home,
+  Blog,
+  Estimate,
+  Landscaping,
+  Maintenance,
+  ServiceArea,
+  SnowPlowing,
+} from "./pages/index";
+
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import NotFound from "./components/NotFound";
+import TopBar from "./components/TopBar";
+// import { ShiftingDropDown } from "./components/ShiftingDropDown";
+
+export default function App() {
+  return (
+    <div className="App">
+      <TopBar />
+      <Navbar />
+      {/* <ShiftingDropDown /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/landscaping" element={<Landscaping />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/servicearea" element={<ServiceArea />} />
+        <Route path="/mainMaintenance" element={<Maintenance />} />
+        <Route path="/estimate" element={<Estimate />} />
+        <Route path="/landscraping" element={<Landscaping />} />
+        <Route path="/snowplowing" element={<SnowPlowing />} />
+        <Route path="/*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </div>
+  );
+}
