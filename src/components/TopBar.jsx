@@ -3,7 +3,7 @@ import { FaPhone, FaClock } from "react-icons/fa";
 
 const TopBar = () => {
   return (
-    <nav className="bg-[#359d7c] flex justify-end items-center py-4 px-6">
+    <div className="bg-[#359d7c] flex justify-end items-center py-2 px-6">
       <div className="text-white flex items-center">
         <FaClock className="mr-2" />
         <div className="mr-6">Mon - Fri: 8AM - 5PM</div>
@@ -11,7 +11,7 @@ const TopBar = () => {
         <FaPhone className="mr-2" />
         <div>Call Now (317) 902-5411</div>
       </div>
-    </nav>
+    </div>
   );
 };
 

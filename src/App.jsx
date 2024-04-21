@@ -12,13 +12,12 @@ import {
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import NotFound from "./components/NotFound";
-import TopBar from "./components/TopBar";
-// import { ShiftingDropDown } from "./components/ShiftingDropDown";
+// import TopBar from "./components/TopBar";
 
 export default function App() {
   return (
     <div className="App">
-      <TopBar />
+      {/* <TopBar /> */}
       <Navbar />
       {/* <ShiftingDropDown /> */}
       <Routes>
