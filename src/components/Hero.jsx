@@ -1,7 +1,22 @@
 import React from "react";
+import { RiGalleryFill, RiGalleryView, RiPencilLine } from "react-icons/ri";
 import hero from "../assets/hero.jpg";
+import { FcGallery } from "react-icons/fc";
+import { LuGalleryThumbnails } from "react-icons/lu";
+import { GiGalley } from "react-icons/gi";
+import { BiPhotoAlbum } from "react-icons/bi";
+import ReusableBtn from "./reusable/ReusableButton";
+import ReusableButton from "./reusable/ReusableButton";
+import { AiOutlinePicture } from "react-icons/ai";
 
 const Hero = () => {
+  const handleConsultationClick = () => {
+    console.log("Schedule Consultation button clicked!");
+  };
+
+  const handleGalleryClick = () => {
+    console.log("Gallery button clicked!");
+  };
   return (
     <div className="relative">
       {/* Background Image */}
@@ -22,6 +37,27 @@ const Hero = () => {
           property maintenance, and landscaping services for residential and
           commercial properties throughout the Indianapolis Metro area.
         </p>
+        <div className="flex space-x-6">
+          {/* <button className="bg-green-500 text-white text-xl px-8 py-4 rounded-lg flex items-center hover:bg-green-600 transition duration-300">
+            Schedule Consultation
+            <RiPencilLine className="ml-2" />
+          </button> */}
+          {/* <button className="bg-green-500 text-white text-xl px-8 py-4 rounded-lg flex items-center hover:bg-green-600 transition duration-300">
+            Before and After Photo
+            <BiPhotoAlbum className="ml-2" />
+          </button> */}
+
+          <ReusableButton
+            onClick={handleConsultationClick}
+            text="Schedule Consultation"
+            icon={RiPencilLine}
+          />
+          <ReusableButton
+            onClick={handleGalleryClick}
+            text="View Gallery"
+            icon={AiOutlinePicture}
+          />
+        </div>
       </div>
     </div>
   );

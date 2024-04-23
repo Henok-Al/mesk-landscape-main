@@ -12,14 +12,11 @@ import {
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import NotFound from "./components/NotFound";
-// import TopBar from "./components/TopBar";
 
 export default function App() {
   return (
     <div className="App">
-      {/* <TopBar /> */}
       <Navbar />
-      {/* <ShiftingDropDown /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/landscaping" element={<Landscaping />} />
