@@ -1,13 +1,13 @@
+import BeforeAfterPhotos from "../components/BeforeAfterPhotos"
 import Hero from "../components/Hero"
 import LandscapeDesc from "../components/LandscapeDesc"
-// import landscapingImage from "../assets/hero.jpg"
 
 const Home = () => {
   return (
     <div>
       <Hero />
      <LandscapeDesc />
-
+    <BeforeAfterPhotos />
     </div>
   )
 }
