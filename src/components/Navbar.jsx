@@ -182,7 +182,7 @@ const Navbar = () => {
 
         {isMobileMenuOpen && (
   <div className="lg:hidden mt-6">
-    <div className="flex flex-col items-start space-y-4">
+    <div className="flex flex-col items-center space-y-4">
       <Link
         to="/"
         className="text-white hover:text-gray-400 block"
