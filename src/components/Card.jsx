@@ -16,7 +16,7 @@ const Card = ({ icon, title, description }) => {
                 <FaCheckCircle className="text-green-500 text-4xl" />
               )}
             </div>
-            <div className="text-xl font-bold text-green-500">{title}</div>
+            <div className="text-xl font-bold text-[#03196A]">{title}</div>
           </div>
           <p className="text-gray-700 text-base mt-2 ml-12">{description}</p>
         </div>

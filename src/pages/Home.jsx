@@ -72,8 +72,7 @@ const Home = () => {
         />
         <Card
           icon={MdSearch}
-          title="	
-        Attention To Detail"
+          title="Attention To Detail"
           description="We strive to achieve the beautiful landscape that you imagine for your yard."
         />
         <Card

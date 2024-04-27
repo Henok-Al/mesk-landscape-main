@@ -31,7 +31,7 @@ const Services = () => {
               Some random text related to {service.text}
             </p>
           </div>
-          <div className="bg-green-500 text-white text-center font-semibold py-8">
+          <div className="bg-[#359d7c] text-white text-center font-semibold py-8">
             {service.text}
           </div>
         </div>
