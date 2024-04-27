@@ -1,10 +1,6 @@
 import React from "react";
 import { RiGalleryFill, RiGalleryView, RiPencilLine } from "react-icons/ri";
 import hero from "../assets/hero.jpg";
-import { FcGallery } from "react-icons/fc";
-import { LuGalleryThumbnails } from "react-icons/lu";
-import { GiGalley } from "react-icons/gi";
-import { BiPhotoAlbum } from "react-icons/bi";
 import ReusableBtn from "./reusable/ReusableButton";
 import ReusableButton from "./reusable/ReusableButton";
 import { AiOutlinePicture } from "react-icons/ai";

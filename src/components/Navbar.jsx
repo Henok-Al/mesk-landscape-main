@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,useLocation  } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
@@ -10,6 +10,8 @@ const Navbar = () => {
   const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scroll, setScroll] = useState(false);
+
+  const location = useLocation();
 
   const handleDropdownToggle1 = () => {
     setIsDropdownOpen1(!isDropdownOpen1);
@@ -39,17 +41,19 @@ const Navbar = () => {
     };
   }, []);
 
+
   return (
-    <div className="fixed w-full z-10">
+    <div className="fixed w-full z-10 ">
       <TopBar />
       <nav
         className={`fixed w-full z-10 transition-all duration-300 ${
-          scroll ? "bg-blue-800" : "bg-transparent"
+          location.pathname === "/" ? (scroll ? "bg-blue-800" : "bg-transparent") : "bg-blue-800"
         }`}
       >
         <div className="max-w-7xl mx-4 flex justify-between items-center h-20">
           <div className="flex items-center flex-shrink-0 text-white mr-6">
-            <h1 className="text-3xl font-bold text-[#00df9a]">ABREHAM.</h1>
+            <h1 className="text-2xl font-bold uppercase text-[#00df9a]"><Link to="/">Mesk landscaping.</Link></h1>
+            <img src="/logo." alt="" />
           </div>
           <div className="block lg:hidden">
             <button
@@ -146,7 +150,7 @@ const Navbar = () => {
                 </div>
               </div>
               <Link
-                to="/snow-plowing"
+                to="/snowplowing"
                 className="block mt-4 text-xl lg:inline-block lg:mt-0 text-white hover:text-gray-400"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
