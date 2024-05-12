@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 
 const LandscapeDesc = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full">
+    <div name="land-desc" className="flex flex-col md:flex-row w-full">
       <div className="relative w-full md:w-2/3">
         {/* <img src={landscapingImage} alt="Landscaping" className="w-full" /> */}
         <div className="inset-0 flex justify-center p-8">

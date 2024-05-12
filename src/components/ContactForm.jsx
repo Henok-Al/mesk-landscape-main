@@ -23,7 +23,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-2/2 mx-4 bg-[#359d7c] mt-10">
+    <form onSubmit={handleSubmit} className="w-2/2 mx-4 bg-[#6daf26] mt-10">
       <div className='p-6'>
         <h1 className=' text-center text-2xl py-4 text-white'>Request Your Estimate</h1>
         <div className="mb-4">

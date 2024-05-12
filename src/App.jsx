@@ -7,6 +7,10 @@ import {
   Maintenance,
   ServiceArea,
   SnowPlowing,
+  LandMowing,
+  TreeHedgeTrimming,
+  CommercialLandscaping, 
+  Service
 } from "./pages/index";
 
 import Footer from "./components/Footer";
@@ -25,7 +29,11 @@ export default function App() {
         <Route path="/mainMaintenance" element={<Maintenance />} />
         <Route path="/estimate" element={<Estimate />} />
         <Route path="/landscraping" element={<Landscaping />} />
+        <Route path="/landscraping/land-mowing" element={<LandMowing />} />
+        <Route path="/landscraping/tree-hedge-trimming" element={<TreeHedgeTrimming />} />
+        <Route path="/landscraping/commercial-landscaping" element={<CommercialLandscaping />} />
         <Route path="/snowplowing" element={<SnowPlowing />} />
+        <Route path="/service" element={<Service />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer />

@@ -7,7 +7,7 @@ const ReusableButton = ({ onClick, text, icon: Icon }) => {
       onClick={onClick}
     >
       {Icon && <Icon className="mr-2" />} 
-      <span className="inline-block">{text}</span>
+      <span className="inline-block" >{text}</span>
     </button>
   );
 };

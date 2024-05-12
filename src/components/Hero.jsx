@@ -1,9 +1,16 @@
 import React from "react";
 import { RiGalleryFill, RiGalleryView, RiPencilLine } from "react-icons/ri";
-import hero from "../assets/hero.jpg";
+import hero from "../assets/pic4.jpg";
 import ReusableBtn from "./reusable/ReusableButton";
 import ReusableButton from "./reusable/ReusableButton";
 import { AiOutlinePicture } from "react-icons/ai";
+import {
+  Link,
+  Element,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
 
 const Hero = () => {
   const handleConsultationClick = () => {
@@ -14,7 +21,7 @@ const Hero = () => {
     console.log("Gallery button clicked!");
   };
   return (
-    <div className="relative">
+    <div className="relative" id="hero">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -28,10 +35,10 @@ const Hero = () => {
         <h1 className="text-4xl lg:text-6xl font-bold mb-4">
           Landscaping & Lawn Care Service In Brownsburg
         </h1>
-        <p className="text-lg lg:text-xl mb-8 px-4 lg:px-0">
+
+        <p className="text-lg lg:text-xl mb-8 px-4 lg:px-0 mx-8">
           Silver Lining Landscaping specializes in professional lawn care,
-          property maintenance, and landscaping services for residential and
-          commercial properties throughout the Indianapolis Metro area.
+          property maintenance, and landscaping services for indy  and  sourounding areas
         </p>
         <div className="flex space-x-6">
           {/* <button className="bg-green-500 text-white text-xl px-8 py-4 rounded-lg flex items-center hover:bg-green-600 transition duration-300">
@@ -43,7 +50,28 @@ const Hero = () => {
             <BiPhotoAlbum className="ml-2" />
           </button> */}
 
+          {/* <div name="section1" className="bg-red-900">
+            Section 1 Content Section 1 Content
+          </div> */}
+
+          <Link to="land-desc" smooth={true} duration={500}>
+           
+            <ReusableButton
+              onClick={handleConsultationClick}
+              text="Schedule Consultation"
+              icon={RiPencilLine}
+            />
+          </Link>
+          <Link to="before-after-images" smooth={true} duration={500}>
+           
           <ReusableButton
+            onClick={handleGalleryClick}
+            text="View Gallery"
+            icon={AiOutlinePicture}
+          /> 
+          </Link>
+
+          {/* <ReusableButton
             onClick={handleConsultationClick}
             text="Schedule Consultation"
             icon={RiPencilLine}
@@ -52,7 +80,7 @@ const Hero = () => {
             onClick={handleGalleryClick}
             text="View Gallery"
             icon={AiOutlinePicture}
-          />
+          /> */}
         </div>
       </div>
     </div>

@@ -3,35 +3,34 @@ import React from "react";
 const Services = () => {
   // Array of service objects
   const services = [
-    { image: "./images/after-01.jpg", text: "Landscape Design" },
-    { image: "./images/after-02.jpg", text: "Garden Maintenance" },
-    { image: "./images/after-01.jpg", text: "Tree Trimming" },
-    { image: "./images/after-02.jpg", text: "Irrigation Installation" },
-    { image: "./images/after-01.jpg", text: "Landscape Design" },
-    { image: "./images/after-02.jpg", text: "Garden Maintenance" },
-    { image: "./images/after-01.jpg", text: "Tree Trimming" },
-    { image: "./images/after-02.jpg", text: "Irrigation Installation" },
+    { image: "./images/pic1.jpg", text: "Landscape Design", description: "We specialize in creating stunning landscape designs tailored to your preferences and needs." },
+    { image: "./images/pic2.jpg", text: "Garden Maintenance", description: "We provide regular and seasonal property maintenance for commercial and residential gardens." },
+    { image: "./images/pic3.jpg", text: "Tree Trimming", description: "Our expert team offers professional tree trimming services to keep your trees healthy and beautiful." },
+    { image: "./images/pic1.jpg", text: "Irrigation Installation", description: "We install efficient irrigation systems to ensure your plants and lawn receive the right amount of water." },
+    { image: "./images/pic4.jpg", text: "Landscape Design", description: "We specialize in creating stunning landscape designs tailored to your preferences and needs." },
+    { image: "./images/pic2.jpg", text: "Garden Maintenance", description: "We provide regular and seasonal property maintenance for commercial and residential gardens." },
+    { image: "./images/pic1.jpg", text: "Mulch Installation", description: "Professionally installed mulch for healthier, more beautiful landscapes. Enhances soil, retains moisture, suppresses weeds, and promotes plant growth." },
+    { image: "./images/pic3.jpg", text: "Irrigation Installation", description: "We install efficient irrigation systems to ensure your plants and lawn receive the right amount of water." },
   ];
 
   return (
-    <div className="bg-[#C8CCDE] p-6">
+    <div className="bg-[#C8CCDE] pt-28" name="services">
       <h1 className="text-center text-3xl font-bold my-4">Services We Can Provide</h1>
-      <h2 className="text-center">Logo</h2>
       <p className="text-center text-lg mx-4">
         If It Involves Landscaping We Can Probably Do It For You! 
       </p>
-      <p  className="text-center text-lg my-4">Click On Any Service To Learn More</p>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4">
+      <p className="text-center text-lg my-4">Click On Any Service To Learn More</p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4">
       
       {services.map((service, index) => (
         <div key={index} className="max-w-xs rounded overflow-hidden shadow-xg relative mx-auto">
           <img className="w-full" src={service.image} alt={service.text} />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100">
             <p className="text-white text-center text-lg font-semibold transform transition-transform duration-300 hover:scale-110">
-              Some random text related to {service.text}
+              {service.description}
             </p>
           </div>
-          <div className="bg-[#359d7c] text-white text-center font-semibold py-8">
+          <div className="bg-[#6daf26] text-white text-center font-semibold py-8">
             {service.text}
           </div>
         </div>
