@@ -70,12 +70,19 @@ const Navbar = () => {
             : "bg-[#6daf26]"
         }`}
       >
-        <div className="max-w-7xl mx-4 flex justify-between items-center h-16">
+        <div className="max-w-7xl mx-2 flex justify-between items-center h-16">
           <div className="flex items-center flex-shrink-0 text-white mr-6">
-            <h1 className="text-2xl font-bold uppercase text-[#00df9a]">
-              <Link to="/">Mesk landscaping.</Link>
-            </h1>
-            <img src="/logo." alt="" />
+          <h1 className="text-2xl font-bold uppercase text-[#00df9a]">
+  <Link to="/">
+    <img
+      src="/images/logos.png"
+      alt="Logo"
+      className="h-64 w-64 md:w-40 lg:w-80 xl:w-96" // Adjust the width for different screen sizes
+    />
+  </Link>
+</h1>
+
+
           </div>
           <div className="block lg:hidden">
             <button
@@ -98,6 +105,12 @@ const Navbar = () => {
                 className="block mt-4 text-xl lg:inline-block lg:mt-0 text-white hover:text-green-500"
               >
                 Services
+              </Link>
+              <Link
+                to="/about-us"
+                className="block mt-4 text-xl lg:inline-block lg:mt-0 text-white hover:text-green-500"
+              >
+                About Us
               </Link>
 
               <div className="group w-fit relative">
@@ -143,14 +156,14 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <LinkScroll to="contact-us" smooth={true} duration={500}>
+              <Link to="contact-us">
                 <button
-                  className="bg-gradient-to-r from-green-400 to-green-600 hover:from-green-500 hover:to-green-700 text-white font-semibold text-xl py-2 px-6 rounded-md shadow-md transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:w-auto"
+                  className="bg-gradient-to-r from-green-400 to-green-600 hover:from-green-500 hover:to-green-700 text-white font-semibold text-xl py-1.5 px-4 rounded-md shadow-md transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:w-auto"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Contact Us
                 </button>
-              </LinkScroll>
+              </Link>
             </div>
           </div>
         </div>
@@ -171,6 +184,13 @@ const Navbar = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Services
+              </Link>
+              <Link
+                to="/about-us"
+                className="text-white hover:text-gray-400 block"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                About Us
               </Link>
               {/* Landscaping Dropdown */}
               <div className="group w-fit relative">

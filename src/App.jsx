@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import {
   Home,
   Blog,
-  Estimate,
   Landscaping,
   Maintenance,
   ServiceArea,
@@ -10,7 +9,9 @@ import {
   LandMowing,
   TreeHedgeTrimming,
   CommercialLandscaping, 
-  Service
+  Service,
+  ContactUs,
+  AboutUs
 } from "./pages/index";
 
 import Footer from "./components/Footer";
@@ -27,13 +28,14 @@ export default function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/servicearea" element={<ServiceArea />} />
         <Route path="/mainMaintenance" element={<Maintenance />} />
-        <Route path="/estimate" element={<Estimate />} />
         <Route path="/landscraping" element={<Landscaping />} />
         <Route path="/landscraping/land-mowing" element={<LandMowing />} />
         <Route path="/landscraping/tree-hedge-trimming" element={<TreeHedgeTrimming />} />
         <Route path="/landscraping/commercial-landscaping" element={<CommercialLandscaping />} />
         <Route path="/snowplowing" element={<SnowPlowing />} />
         <Route path="/service" element={<Service />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/about-us" element={<AboutUs />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer />

@@ -1,16 +1,10 @@
 import React from "react";
-import { RiGalleryFill, RiGalleryView, RiPencilLine } from "react-icons/ri";
+import { MdExplore } from "react-icons/md";
 import hero from "../assets/pic4.jpg";
-import ReusableBtn from "./reusable/ReusableButton";
 import ReusableButton from "./reusable/ReusableButton";
 import { AiOutlinePicture } from "react-icons/ai";
-import {
-  Link,
-  Element,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Link as LinkScroll} from "react-scroll";
+import { Link} from "react-router-dom"
 
 const Hero = () => {
   const handleConsultationClick = () => {
@@ -20,67 +14,41 @@ const Hero = () => {
   const handleGalleryClick = () => {
     console.log("Gallery button clicked!");
   };
+
   return (
     <div className="relative" id="hero">
-      {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${hero})` }}
       >
-        {/* Overlay */}
         <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
       </div>
-      {/* Content */}
-      <div className="relative  flex flex-col justify-center items-center text-center h-screen text-white">
+      <div className="relative flex flex-col justify-center items-center text-center h-screen text-white">
         <h1 className="text-4xl lg:text-6xl font-bold mb-4">
-          Landscaping & Lawn Care Service In Brownsburg
+          Landscaping & Lawn Care Service In Indy and Surrounding Areas
         </h1>
-
-        <p className="text-lg lg:text-xl mb-8 px-4 lg:px-0 mx-8">
-          Silver Lining Landscaping specializes in professional lawn care,
-          property maintenance, and landscaping services for indy  and  sourounding areas
+        <p className="text-lg lg:text-xl mb-8 px-4 lg:px-0 mx-8 ">
+          At Mesk Landscaping, we specialize in creating stunning landscapes
+          that enhance the beauty and functionality of your outdoor spaces. From
+          design to maintenance, we offer a comprehensive range of services to
+          meet all your landscaping needs. Transform Your Outdoors into a
+          Beautiful Oasiss
         </p>
         <div className="flex space-x-6">
-          {/* <button className="bg-green-500 text-white text-xl px-8 py-4 rounded-lg flex items-center hover:bg-green-600 transition duration-300">
-            Schedule Consultation
-            <RiPencilLine className="ml-2" />
-          </button> */}
-          {/* <button className="bg-green-500 text-white text-xl px-8 py-4 rounded-lg flex items-center hover:bg-green-600 transition duration-300">
-            Before and After Photo
-            <BiPhotoAlbum className="ml-2" />
-          </button> */}
-
-          {/* <div name="section1" className="bg-red-900">
-            Section 1 Content Section 1 Content
-          </div> */}
-
-          <Link to="land-desc" smooth={true} duration={500}>
-           
+          <Link to="/service">
             <ReusableButton
               onClick={handleConsultationClick}
-              text="Schedule Consultation"
-              icon={RiPencilLine}
+              text="Explore Our Services"
+              icon={MdExplore}
             />
           </Link>
-          <Link to="before-after-images" smooth={true} duration={500}>
-           
-          <ReusableButton
-            onClick={handleGalleryClick}
-            text="View Gallery"
-            icon={AiOutlinePicture}
-          /> 
-          </Link>
-
-          {/* <ReusableButton
-            onClick={handleConsultationClick}
-            text="Schedule Consultation"
-            icon={RiPencilLine}
-          />
-          <ReusableButton
-            onClick={handleGalleryClick}
-            text="View Gallery"
-            icon={AiOutlinePicture}
-          /> */}
+          <LinkScroll to="before-after-images" smooth={true} duration={500}>
+            <ReusableButton
+              onClick={handleGalleryClick}
+              text="View Gallery"
+              icon={AiOutlinePicture}
+            />
+          </LinkScroll>
         </div>
       </div>
     </div>

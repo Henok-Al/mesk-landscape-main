@@ -23,14 +23,14 @@ const Services = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4">
       
       {services.map((service, index) => (
-        <div key={index} className="max-w-xs rounded overflow-hidden shadow-xg relative mx-auto">
+        <div key={index} className="max-w-xs rounded overflow-hidden shadow-xg relative mx-auto" >
           <img className="w-full" src={service.image} alt={service.text} />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100">
             <p className="text-white text-center text-lg font-semibold transform transition-transform duration-300 hover:scale-110">
               {service.description}
             </p>
           </div>
-          <div className="bg-[#6daf26] text-white text-center font-semibold py-8">
+          <div className="bg-[#6daf26] text-white text-center font-semibold py-8" >
             {service.text}
           </div>
         </div>

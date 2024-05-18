@@ -27,7 +27,7 @@ import { CgRemove } from "react-icons/cg";
 import { LuDelete } from "react-icons/lu";
 import Info from "../components/Info";
 // import ContactUs from "../components/ContactUs";
-import ContactUs from "../components/ContactUs"
+// import ContactUs from "../components/ContactUs"
 
 const Home = () => {
   return (
@@ -35,7 +35,7 @@ const Home = () => {
       <Hero />
       <LandscapeDesc />
       <BeforeAfterPhotos />
-      <ContactUs />
+      {/* <ContactUs /> */}
       <Info phoneNumber="3179025411"/>
 
     </div>

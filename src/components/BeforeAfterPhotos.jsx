@@ -27,7 +27,7 @@ const BeforeAfterGallery = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8 mt-6 bg-[#CEE2B9]" name="before-after-images">
+    <div className="container mx-auto px-4 py-8 mt-6 bg-[#CEE2B9]" name="before-after-images" id="estimate-form">
       <h1 className="text-3xl font-semibold mb-4 text-center">Before & After Gallery</h1>
       <div className="grid grid-cols-2 gap-4">
         {/* Map over the images array and render each image */}
