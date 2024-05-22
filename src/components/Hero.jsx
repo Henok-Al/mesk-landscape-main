@@ -16,7 +16,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative" id="hero">
+    <div className="relative pt-8" id="hero">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${hero})` }}
@@ -24,10 +24,10 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
       </div>
       <div className="relative flex flex-col justify-center items-center text-center h-screen text-white">
-        <h1 className="text-4xl lg:text-6xl font-bold mb-4">
+        <h1 className="text-3xl  lg:text-6xl font-bold mb-4">
           Landscaping & Lawn Care Service In Indy and Surrounding Areas
         </h1>
-        <p className="text-lg lg:text-xl mb-8 px-4 lg:px-0 mx-8 ">
+        <p className="text-xl lg:text-xl mb-8 px-4 lg:px-0 mx-8 ">
           At Mesk Landscaping, we specialize in creating stunning landscapes
           that enhance the beauty and functionality of your outdoor spaces. From
           design to maintenance, we offer a comprehensive range of services to
