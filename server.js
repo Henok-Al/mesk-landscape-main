@@ -1,8 +1,8 @@
-const express = require('express');
-const nodemailer = require('nodemailer');
-const cors = require('cors');
-const bodyParser = require('body-parser');
-const dotenv = require('dotenv');
+import express from 'express';
+import nodemailer from 'nodemailer';
+import cors from 'cors';
+import bodyParser from 'body-parser';
+import dotenv from 'dotenv';
 
 // Load environment variables from .env file
 dotenv.config();
@@ -25,8 +25,8 @@ const transporter = nodemailer.createTransport({
   debug: true,
   secureConnection: false,
   auth: {
-    user: process.env.EMAIL, // Corrected here
-    pass: process.env.PASSWORD, // Corrected here
+    user: process.env.EMAIL,
+    pass: process.env.PASSWORD,
   },
   tls: {
     rejectUnauthorized: true,
