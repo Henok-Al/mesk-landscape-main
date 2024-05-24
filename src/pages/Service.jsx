@@ -1,28 +1,20 @@
-import Card from '../components/Card'
-import Services from '../components/Services'
+import Card from "../components/Card";
+import Services from "../components/Services";
 import { GrLicense } from "react-icons/gr";
 import { BsChatSquare, BsPeople } from "react-icons/bs";
-import { BiChat, BiLeaf } from "react-icons/bi";
+import { BiLeaf } from "react-icons/bi";
 import { GiPriceTag } from "react-icons/gi";
 import {
   MdChatBubbleOutline,
-  MdDelete,
-  MdDeleteOutline,
-  MdDeleteSweep,
-  MdFolderDelete,
-  MdOutlineChatBubbleOutline,
   MdOutlineDeleteForever,
-  MdOutlineFolderDelete,
   MdSearch,
   MdSecurity,
 } from "react-icons/md";
-import { FiDelete } from "react-icons/fi";
-import { CgRemove } from "react-icons/cg";
-import { LuDelete } from "react-icons/lu";
 
 const Service = () => {
-  return (<div>
-    <Services />
+  return (
+    <div>
+      <Services />
       <div className="flex flex-wrap justify-center">
         <Card
           icon={GrLicense}
@@ -70,8 +62,8 @@ const Service = () => {
           description="We are great communicators and keep you informed of your project at every step."
         />
       </div>
-      </div>
-  )
-}
+    </div>
+  );
+};
 
-export default Service
+export default Service;

@@ -4,16 +4,14 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen  bg-gray-50 flex items-center justify-center lg:py-10 py-24">
       <div className="max-w-6xl w-full rounded-lg p-6 md:p-8 flex flex-col md:flex-row md:space-x-16">
-        {/* Left Side Image */}
         <div className="md:w-1/2 mb-6 md:mb-0 ">
           <img
             src="/images/logo-black.png"
             alt="About Us"
-            className="rounded-lg shadow-md w-full h-auto md:h-64" // Adjust height here (e.g., md:h-64)
+            className="rounded-lg shadow-md w-full h-auto md:h-64" 
           />
         </div>
 
-        {/* Right Side Text */}
         <div className="md:w-1/2 flex flex-col justify-center">
           <h1 className="text-4xl font-bold mb-4">About Us</h1>
           <p className="text-gray-600 mb-6">
