@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    name: "John Doe",
-    title: "CEO, Company",
-    image: "https://via.placeholder.com/150",
+    name: "Birhanu Alemu",
+    title: "Software Engineer",
+    image: "/images/testi1.jpg",
     quote:
       "The team at Mesk Landscaping transformed our backyard into a stunning oasis. Their attention to detail and dedication to quality are truly unmatched.",
   },
