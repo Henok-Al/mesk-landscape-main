@@ -8,7 +8,6 @@ import {
   ContactUs,
   AboutUs
 } from "./pages/index";
-
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import NotFound from "./components/NotFound";
