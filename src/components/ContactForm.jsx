@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -16,13 +19,28 @@ const ContactForm = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+    try {
+      const response = await axios.post("http://localhost:4000/api/estimate", formData);
+      toast.success(response.data.message);
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        streetAddress: '',
+        cityOrTown: '',
+        howDidYouHearAboutUs: '',
+        message: '',
+      });
+    } catch (error) {
+      console.error('Error sending request:', error);
+      toast.error("Error sending message. Please try again.");
+    }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-2/2 mx-4 bg-[#6daf26] mt-10" >
+    <form onSubmit={handleSubmit} className="w-2/2 mx-4 bg-[#6daf26] mt-10">
       <div className='p-6'>
         <h1 className=' text-center text-2xl py-4 text-white'>Request Your Estimate</h1>
         <div className="mb-4">
@@ -104,6 +122,7 @@ const ContactForm = () => {
           Send Your Request
         </button>
       </div>
+      <ToastContainer />
     </form>
   );
 };

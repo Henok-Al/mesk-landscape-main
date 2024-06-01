@@ -114,7 +114,8 @@ const ContactUs = () => {
                 name="message"
                 id="message"
                 rows="4"
-                value={formData.message}
+                value
+                ={formData.message}
                 onChange={handleChange}
               ></textarea>
             </div>

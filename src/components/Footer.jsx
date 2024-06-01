@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="  text-white ">
-      <div className="container w-full  px-4 md:px-4 lg:px-4 bg-green-500">
+      <div className="container w-full  px-4 md:px-4 lg:px-4 bg-[#6daf26]">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="mb-8 md:mb-0">
             <h3 className="text-2xl font-bold mb-4">
