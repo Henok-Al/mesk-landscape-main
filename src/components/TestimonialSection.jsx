@@ -3,39 +3,39 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    name: "Birhanu Alemu",
+    name: "John Doe",
     title: "Software Engineer",
-    image: "/images/testi1.jpg",
+    image: "https://via.placeholder.com/150",
     quote:
       "The team at Mesk Landscaping transformed our backyard into a stunning oasis. Their attention to detail and dedication to quality are truly unmatched.",
   },
   {
-    name: "Birhanu Alemu",
+    name: "John Doe",
     title: "CEO of XY Campany",
     image: "https://via.placeholder.com/150",
     quote:
       "We couldn't be happier with the service and results from [Your Business Name]. Our garden has never looked better!",
   },
   {
-    name: "Birhanu Alemu",
+    name: "John Doe",
     title: "CEO of XY Campany",
     image: "https://via.placeholder.com/150",
     quote: "A must-have tool for any business.",
   },
   {
-    name: "Birhanu Alemu",
+    name: "John Doe",
     title: "CEO of XY Campany",
     image: "https://via.placeholder.com/150",
     quote: "A must-have tool for any business.",
   },
   {
-    name: "Birhanu Alemu",
+    name: "John Doe",
     title: "CEO of XY Campany",
     image: "https://via.placeholder.com/150",
     quote: "A must-have tool for any business.",
   },
   {
-    name: "Birhanu Alemu",
+    name: "John Doe",
     title: "CEO of XY Campany",
     image: "https://via.placeholder.com/150",
     quote: "A must-have tool for any business.",

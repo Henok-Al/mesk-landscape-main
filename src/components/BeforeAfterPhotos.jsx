@@ -3,25 +3,17 @@ import React from 'react';
 const BeforeAfterGallery = () => {
   const images = [
     {
-      before: '/images/before-01.jpg',
-      after: '/images/after-01.jpg',
+      before: '/images/d.jpg',
+      after: '/images/b.jpg',
       alt: 'Landscape Transformation 1',
     },
+    
     {
-      before: '/images/before-02.jpg',
-      after: '/images/after-02.jpg',
+      before: '/images/d.jpg',
+      after: '/images/c.jpg',
       alt: 'Landscape Transformation 2',
     },
-    {
-      before: '/images/before-02.jpg',
-      after: '/images/after-02.jpg',
-      alt: 'Landscape Transformation 2',
-    },
-    {
-      before: '/images/before-02.jpg',
-      after: '/images/after-02.jpg',
-      alt: 'Landscape Transformation 2',
-    },
+    
     
   ];
 

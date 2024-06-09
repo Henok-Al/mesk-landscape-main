@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
+    name: 'zx',
     email: '',
     phone: '',
     streetAddress: '',
